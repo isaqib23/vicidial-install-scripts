@@ -148,7 +148,7 @@ read -p 'Press Enter to continue: '
 echo 'Continuing...'
 #Get astguiclient.conf file
 echo "" > /etc/astguiclient.conf
-wget -O /etc/astguiclient.conf https://raw.githubusercontent.com/jaganthoutam/vicidial-install-scripts/main/astguiclient.conf
+wget -O /etc/astguiclient.conf https://raw.githubusercontent.com/isaqib23/vicidial-install-scripts/main/astguiclient.conf
 echo "Replace IP address in Default"
 echo "%%%%%%%%%Please Enter This Server IP ADD%%%%%%%%%%%%"
 read serveripadd
@@ -164,12 +164,12 @@ echo "Replace OLD IP. You need to Enter your Current IP here"
 /usr/share/astguiclient/ADMIN_update_server_ip.pl --old-server_ip=10.10.10.15
 
 #Install Crontab
-wget -O /root/crontab-file https://raw.githubusercontent.com/jaganthoutam/vicidial-install-scripts/main/crontab
+wget -O /root/crontab-file https://raw.githubusercontent.com/isaqib23/vicidial-install-scripts/main/crontab
 crontab /root/crontab-file
 crontab -l
 
 #Install rc.local
-wget -O /etc/rc.local https://raw.githubusercontent.com/jaganthoutam/vicidial-install-scripts/main/rc.local
+wget -O /etc/rc.local https://raw.githubusercontent.com/isaqib23/vicidial-install-scripts/main/rc.local
 chmod +x /etc/rc.local
 systemctl start rc-local
 read -p 'Press Enter to Reboot: '
