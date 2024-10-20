@@ -21,7 +21,7 @@ reboot
 # Install VICIDIAL Now
 
 ```
-git clone https://github.com/jaganthoutam/vicidial-install-scripts.git
+git clone https://github.com/isaqib23/vicidial-install-scripts.git
 cd vicidial-install-scripts
 ```
 
